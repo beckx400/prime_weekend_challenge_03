@@ -16,9 +16,6 @@ app.get('/epsilon', function(req, res){
     res.send(data);
 });
 
-//app.get('/favicon.png', function(req, res){
-//    res.send("/");
-//});
 
 var server = app.listen(process.env.PORT || 3000, function(){
     var port = server.address().port;
