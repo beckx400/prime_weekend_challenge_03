@@ -6,7 +6,7 @@ var path = require('path');
 var data = require("/Users/Dave/WebstormProjects/cohort-carousel/server/public/assets/data/data.json");
 var app = express();
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + "/public/views/index.html");
